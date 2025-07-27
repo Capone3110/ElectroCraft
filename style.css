@@ -1,17 +1,211 @@
-/* styles.css */
-body { margin:0; font-family:sans-serif; color:#333; }
-header.navbar { display:flex; padding:1rem; background:#fff; align-items:center; position:sticky; top:0; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
-.navbar .logo { font-size:1.5rem; font-weight:bold; }
-.navbar nav ul { list-style:none; display:flex; gap:1rem; margin:0; padding:0; }
-.navbar a { text-decoration:none; color:#333; }
-.btn-cta { background:#007acc; color:#fff; padding:0.5rem 1rem; border-radius:4px; }
-.hero { height:60vh; background:url('hero.jpg') center/cover no-repeat; display:flex; align-items:center; justify-content:center; color:#fff; text-align:center; padding:0 1rem; }
-.hero-content h1 { font-size:2.5rem; margin-bottom:1rem; }
-.services, .portfolio, .reviews, .smart-home, .blog, .contact { padding:2rem 1rem; max-width:1000px; margin:0 auto; }
-.service-grid, .gallery, .smart-grid { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); }
-.service-item, .smart-item { background:#f8f8f8; padding:1rem; border-radius:6px; }
-blockquote { background:#eef; margin:1rem 0; padding:1rem; border-left:4px solid #007acc; }
-.blog article { margin-bottom:1.5rem; }
-.contact form { display:grid; gap:1rem; max-width:400px; }
-.contact form label { display:flex; flex-direction:column; }
-.footer { background:#f0f0f0; text-align:center; padding:1rem; font-size:0.9rem; }
+/* styles.css pentru ElectroCraft */
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #0f1113;
+  color: #e6e6e6;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #121417;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #00d1ff;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #e6e6e6;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00d1ff;
+}
+
+.btn-cta {
+  background-color: #00d1ff;
+  color: #0f1113;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #00a6cc;
+}
+
+.hero {
+  background: url('assets/hero-smart.jpg') center/cover no-repeat;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  padding: 0 1.5rem;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #c4c4c4;
+}
+
+.btn-main {
+  background: #00d1ff;
+  color: #0f1113;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.btn-main:hover {
+  background: #00a6cc;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #121417;
+  padding: 3rem 2rem;
+  gap: 2rem;
+}
+
+.feature {
+  flex: 1 1 300px;
+  background-color: #1b1e22;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.feature h3 {
+  color: #00d1ff;
+  margin-bottom: 0.5rem;
+}
+
+.gallery {
+  padding: 3rem 2rem;
+  background-color: #0f1113;
+}
+
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.testimonials {
+  background-color: #121417;
+  padding: 3rem 2rem;
+}
+
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.testimonials blockquote {
+  max-width: 800px;
+  margin: 1rem auto;
+  font-style: italic;
+  color: #aaa;
+  border-left: 4px solid #00d1ff;
+  padding-left: 1rem;
+}
+
+.footer {
+  background-color: #1b1e22;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #00d1ff;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
