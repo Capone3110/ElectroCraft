@@ -60,7 +60,7 @@ nav ul li a:hover {
 }
 
 .hero {
-  background: url('assets/hero-smart.jpg') center/cover no-repeat;
+  background: url('assets/hero-smart.png') center/cover no-repeat;
   height: 90vh;
   position: relative;
   display: flex;
